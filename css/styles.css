@@ -30,6 +30,23 @@ a:hover {
   color: unset;
 }
 
+.base-input {
+    display: block;
+    border-radius: 3px;
+    font-size: 1em;
+    letter-spacing: -0.015em;
+    color: #263238;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #d2d8dd;
+    padding-left: 10px;
+  }
+   
+  .base-input::placeholder {
+     display: block;
+    color: #9E9E9E;
+  }
+
 
 .header-container{
     background-color: #434bdf;
@@ -78,4 +95,21 @@ a:hover {
 
 .btn{
     text-align: end;
+}
+.btn-control{
+    background-color: #0d6efd; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.btn-control:hover{
+    background-color: #dc3545;
 }
