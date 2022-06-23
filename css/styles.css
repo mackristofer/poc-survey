@@ -93,11 +93,15 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.check-input a{
+    color: #434bdf;
+}
+
 .btn{
     text-align: end;
 }
 .btn-control{
-    background-color: #0d6efd; /* Green */
+    background-color: #0d6efd;
     border: none;
     color: white;
     padding: 10px 32px;
@@ -106,10 +110,49 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     border-radius: 3px;
-    transition: .5s ease;
+    transition: all .5s ease;
     cursor: pointer;
 }
 
 .btn-control:hover{
     background-color: #dc3545;
+}
+
+
+.radio-input input{
+    display: none;
+}
+
+.radio-input label{
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.radio-input input + label::before{
+    content: "";
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rbga(0,0,0,0.2);
+    color: #fff;
+    background: #fff;
+    text-align: center;
+
+}
+
+.radio-input input:checked + label::before{
+    content: "";
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    color: none;
+    border: 5px solid #0d6efd;
+    padding: 4px;
+
 }
