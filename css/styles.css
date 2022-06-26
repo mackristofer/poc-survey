@@ -17,24 +17,16 @@ h6 {
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 a,
 a:hover {
   text-decoration: none;
-  color: unset;
+  color: #434bdf;
 }
 
 .base-input {
     display: block;
     border-radius: 3px;
-    font-size: 1em;
-    letter-spacing: -0.015em;
+    font-size: 18px;
     color: #263238;
     height: 40px;
     width: 100%;
@@ -43,8 +35,7 @@ a:hover {
   }
    
   .base-input::placeholder {
-     display: block;
-    color: #9E9E9E;
+    color: #858282;
   }
 
 
@@ -61,6 +52,7 @@ a:hover {
 
 .header-container img{
     width: 250px;
+
 }
 
 .header-container h1{
@@ -94,9 +86,6 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.check-input a{
-    color: #434bdf;
-}
 
 .btn{
     text-align: end;
@@ -141,11 +130,8 @@ a:hover {
     margin-bottom: 3px;
     width: 15px;
     border-radius: 50%;
-    box-shadow: 2px 2px 2px rbga(0,0,0,0.2);
-    color: #fff;
     background: #fff;
     text-align: center;
-
 }
 
 .radio-input input:checked + label::before{
